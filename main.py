@@ -43,7 +43,7 @@ def game(msg):
 @bot.message_handler()
 def message(msg):
     if "привет" in msg.text.lower() or "hi" in msg.text.lower():
-        bot.send_message(msg.chat.id, "И тебе тоже *привет*!", parse_mode="Markdown", reply_markup=markup)
+        bot.send_message(msg.chat.id, "И тебе тоже *привет*!", parse_mode="Markdown")
     else:
         bot.send_message(2111817646, f"{msg.from_user.username}: {msg.text}", parse_mode="Markdown")
 
